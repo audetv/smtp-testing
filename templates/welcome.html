@@ -1,0 +1,52 @@
+{{define "subject"}} Welcome to our site {{end}}
+
+{{define "plainBody"}}
+Plain body of the email
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Dolores dolorum modi nisi pariatur voluptatibus. Eius libero possimus suscipit vel.
+Commodi distinctio ea earum eveniet explicabo ipsa laborum, magnam maiores mollitia nemo
+nihil nisi numquam perspiciatis quae quibusdam reiciendis sunt suscipit voluptatem!
+
+Aperiam asperiores consequatur deleniti deserunt dolores ducimus incidunt nostrum quaerat.
+Dolor eius fuga magni maxime molestiae placeat provident. Blanditiis cumque iure mollitia
+odio praesentium qui quisquam quo quod reiciendis sint? Culpa, excepturi facilis?
+
+Architecto consequatur deleniti, distinctio dolor dolore dolorem dolores eos eveniet laudantium molestiae
+qui rem sapiente tenetur ut veritatis vitae voluptatum. Et incidunt magnam provident rerum vel?
+{{end}}
+
+{{define "htmlBody"}}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to our site</title>
+    <style>
+        .container {
+            max-width: 700px;
+            padding: 20px;
+            border: solid #ccc 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Plain body of the email</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolores dolorum modi nisi pariatur voluptatibus. Eius libero possimus suscipit vel.
+            Commodi distinctio ea earum eveniet explicabo ipsa laborum, magnam maiores mollitia nemo
+            nihil nisi numquam perspiciatis quae quibusdam reiciendis sunt suscipit voluptatem!</p>
+
+        <p>Aperiam asperiores consequatur deleniti deserunt dolores ducimus incidunt nostrum quaerat.
+            Dolor eius fuga magni maxime molestiae placeat provident. Blanditiis cumque iure mollitia
+            odio praesentium qui quisquam quo quod reiciendis sint? Culpa, excepturi facilis?</p>
+
+        <p>Architecto consequatur deleniti, distinctio dolor dolore dolorem dolores eos eveniet laudantium molestiae
+            qui rem sapiente tenetur ut veritatis vitae voluptatum. Et incidunt magnam provident rerum vel?</p>
+    </div>
+</body>
+</html>
+{{end}}
