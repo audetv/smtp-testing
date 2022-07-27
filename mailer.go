@@ -72,6 +72,7 @@ func (m Mailer) Send(to, templateFile string, data interface{}) error {
 	msg.SetHeader("From", m.sender)
 	msg.SetBody("text/plain", plainBody.String())
 	msg.SetBody("text/html", htmlBody.String())
+	msg.Attach("templates/2000px-Email_Shiny_Icon.svg_.png")
 
 	return m.dialer.DialAndSend(msg)
 }
